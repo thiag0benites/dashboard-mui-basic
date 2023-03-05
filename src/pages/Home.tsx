@@ -3,10 +3,7 @@ import Navbar from "../components/Navbar"
 import Sidenav from "../components/Sidenav"
 import Grid from '@mui/material/Grid'
 import Card from '@mui/material/Card'
-// import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
-// import CardMedia from '@mui/material/CardMedia'
-// import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack'
 import '../Dash.css'
@@ -14,13 +11,14 @@ import StorefrontIcon from '@mui/icons-material/Storefront'
 import CreditCardIcon from '@mui/icons-material/CreditCard'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import AccordionDash from "../components/AccordionDash"
+import BarChart from "../charts/BarChart"
 
 export default function Home() {
   return (
     <>
       <div className="bgcolor">
         <Navbar />
-        <Box height={70} />
+        <Box height={60} />
         <Box sx={{ display: 'flex' }}>
           <Sidenav />
           <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
@@ -58,7 +56,7 @@ export default function Home() {
                       <div className="iconstyle">
                         <StorefrontIcon />
                       </div>
-                      <div className="paddingall">
+                      <div className="paddingall cardGradientRight">
                         <span className='pricetitle'>$203K</span>
                         <br />
                         <span className='pricesubtitle'>Total Income</span>
@@ -84,7 +82,9 @@ export default function Home() {
             <Grid container spacing={2}>
               <Grid item xs={8}>
                 <Card sx={{ height: 50 + 'vh' }}>
-                  <CardContent></CardContent>
+                  <CardContent>
+                    <BarChart />
+                  </CardContent>
                 </Card>
               </Grid>
               <Grid item xs={4}>

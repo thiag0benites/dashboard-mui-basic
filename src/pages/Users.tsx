@@ -2,7 +2,7 @@ import { Box } from "@mui/material"
 import Navbar from "../components/Navbar"
 import Sidenav from "../components/Sidenav"
 
-export default function Settings() {
+export default function Users() {
   return (
     <>
       <div className="bgcolor">
@@ -11,7 +11,7 @@ export default function Settings() {
         <Box sx={{ display: 'flex' }}>
           <Sidenav />
           <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-            <h1>Settings</h1>
+            <h1>Users</h1>
           </Box>
         </Box>
       </div>
