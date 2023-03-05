@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
-import Navbar from "../components/Navbar";
-import Sidenav from "../components/Sidenav";
+import { Box } from "@mui/material"
+import Navbar from "../components/Navbar"
+import Sidenav from "../components/Sidenav"
 
 export default function About() {
   return (
